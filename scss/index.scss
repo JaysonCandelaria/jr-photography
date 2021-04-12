@@ -1,0 +1,158 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+@include font('Caviar Dreams', '../fonts/CaviarDreams');
+@include font('Caviar Dreams Bold', '../fonts/CaviarDreams_Bold');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    letter-spacing: 1px;
+    outline: none !important;
+}
+
+main {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    background: $color-primary;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: $color-dark;
+
+    .navbar-brand {
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+
+    .navbar-nav {
+        @media (max-width: 991px) {
+            background: $color-primary;
+        }
+
+        .navbar-brand-center {
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        .nav-item {
+            padding-left: 2vw !important;
+            padding-right: 2vw !important;
+
+            &.active .nav-link {
+                border-bottom: 1px solid $color-accent;
+                border-bottom-style: double;
+            }
+
+            .nav-link {
+                font-size: 16px;
+                letter-spacing: 3px;
+                color: #fff !important;
+                font-family: 'Open Sans Condensed', sans-serif !important;
+            }
+
+            .dropdown-menu {
+                background: $color-primary !important;
+                border: none;
+
+                .dropdown-item {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 300;
+
+                    @media (max-width: 991px) {
+                        text-align: center;
+                    }
+
+                    &.active {
+                        color: $color-accent;
+                        background: none;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                        color: $color-accent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    background: $color-dark;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+
+    .footer-title {
+        color: $color-accent;
+        font-family: 'Caviar Dreams Bold', sans-serif;
+        font-size: 20px;
+    }
+
+    hr {
+        background: $color-accent;
+        width: 5%;
+        margin: 20px auto;
+    }
+
+    .footer-schedules {
+        font-size: 14px;
+
+        .highlight {
+            color: $color-accent;
+        }
+    }
+
+    .footer-socialmedia {
+        .btn {
+            border-bottom: 1px solid $color-accent;
+            color: #fff;
+            border-radius: 0;
+            width: 120px;
+        }
+    }
+
+    .footer-designed-by {
+        font-size: 12px;
+        padding: 10px;
+
+        a {
+            color: $color-accent;
+        }
+    }
+}
+
+.modal-body {
+    background: $color-primary;
+}

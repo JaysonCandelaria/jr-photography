@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("../fonts/CaviarDreams_Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  letter-spacing: 1px;
+  outline: none !important;
+}
+
+main {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background: #181619;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #121212;
+}
+@media (min-width: 992px) {
+  header .navbar-brand {
+    display: none;
+  }
+}
+header .navbar-toggler {
+  border: none;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+@media (max-width: 991px) {
+  header .navbar-nav {
+    background: #181619;
+  }
+}
+@media (max-width: 991px) {
+  header .navbar-nav .navbar-brand-center {
+    display: none;
+  }
+}
+header .navbar-nav .nav-item {
+  padding-left: 2vw !important;
+  padding-right: 2vw !important;
+}
+header .navbar-nav .nav-item.active .nav-link {
+  border-bottom: 1px solid #C9AB81;
+  border-bottom-style: double;
+}
+header .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #fff !important;
+  font-family: "Open Sans Condensed", sans-serif !important;
+}
+header .navbar-nav .nav-item .dropdown-menu {
+  background: #181619 !important;
+  border: none;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+@media (max-width: 991px) {
+  header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    text-align: center;
+  }
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item.active {
+  color: #C9AB81;
+  background: none;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background: transparent;
+  color: #C9AB81;
+}
+
+/* FOOTER */
+footer {
+  background: #121212;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+footer .footer-title {
+  color: #C9AB81;
+  font-family: "Caviar Dreams Bold", sans-serif;
+  font-size: 20px;
+}
+footer hr {
+  background: #C9AB81;
+  width: 5%;
+  margin: 20px auto;
+}
+footer .footer-schedules {
+  font-size: 14px;
+}
+footer .footer-schedules .highlight {
+  color: #C9AB81;
+}
+footer .footer-socialmedia .btn {
+  border-bottom: 1px solid #C9AB81;
+  color: #fff;
+  border-radius: 0;
+  width: 120px;
+}
+footer .footer-designed-by {
+  font-size: 12px;
+  padding: 10px;
+}
+footer .footer-designed-by a {
+  color: #C9AB81;
+}
+
+.modal-body {
+  background: #181619;
+}
+
+.contacts-container {
+  background: linear-gradient(to bottom, #121212 50%, #0F1D22 50%);
+}
+.contacts-container .contact-item {
+  background: #181619;
+  box-shadow: 0px 0px 10px rgba(201, 171, 129, 0.1);
+  border-radius: 20px;
+  height: 100%;
+}
+.contacts-container .contact-item .contact-item-name {
+  color: #C9AB81;
+  font-size: 18px;
+  font-weight: 800;
+}
+.contacts-container .contact-item .contact-item-value {
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form-container {
+  background: #0F1D22;
+  color: #fff;
+}
+.contact-form-container .row {
+  background: #181619;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+  background: #121212;
+  border: none;
+  color: #fff;
+}
+.contact-form-container .btn {
+  background: #C9AB81;
+}
+
+.container-superscript {
+  color: #C9AB81;
+  font-family: "Miniver", cursive;
+  font-size: 19px;
+}
+
+.container-title {
+  font-family: "Caviar Dreams Bold", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.22em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #C9AB81;
+}
+.container-title.small {
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,99 @@
+@import "./index.scss";
+
+.products-container {
+    background: $color-secondary;
+
+    .products-style-selector {
+        button {
+            height: 40px;
+            min-width: 40px;
+            border-radius: 3px;
+            font-size: 16px;
+            background: none;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 10px;
+            font-weight: 800;
+            color: #fff;
+            margin: 5px;
+
+            svg {
+                fill: #fff;
+            }
+
+            &.active {
+                background: $color-accent;
+                color: $color-dark;
+
+                svg {
+                    fill: $color-dark;
+                }
+            }
+        }
+    }
+
+    .grid {
+        .product-item {
+            border-radius: 10px;
+            overflow: hidden;
+            background: $color-dark;
+            transition: all .2s ease;
+
+            .product-image {
+                img {
+                    height: 550px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .product-info {
+                .product-name {
+                    color: #fff;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                }
+
+                .product-price {
+                    color: $color-accent;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    .list {
+        .product-item {
+            text-transform: uppercase;
+            padding: 0px 10px;
+
+            .product-title {
+                border-bottom: 1px dashed #fff;
+
+                .product-name {
+                    color: #fff;
+                    font-size: 16px;
+                }
+
+                .product-price {
+                    color: $color-accent;
+                    font-weight: 800;
+                    font-size: 20px;
+                }
+            }
+
+            .product-description {
+                color: darken(#fff, 20);
+                font-family: 'Open Sans Condensed', sans-serif !important;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

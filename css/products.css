@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("../fonts/CaviarDreams_Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  letter-spacing: 1px;
+  outline: none !important;
+}
+
+main {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background: #181619;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #121212;
+}
+@media (min-width: 992px) {
+  header .navbar-brand {
+    display: none;
+  }
+}
+header .navbar-toggler {
+  border: none;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+@media (max-width: 991px) {
+  header .navbar-nav {
+    background: #181619;
+  }
+}
+@media (max-width: 991px) {
+  header .navbar-nav .navbar-brand-center {
+    display: none;
+  }
+}
+header .navbar-nav .nav-item {
+  padding-left: 2vw !important;
+  padding-right: 2vw !important;
+}
+header .navbar-nav .nav-item.active .nav-link {
+  border-bottom: 1px solid #C9AB81;
+  border-bottom-style: double;
+}
+header .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #fff !important;
+  font-family: "Open Sans Condensed", sans-serif !important;
+}
+header .navbar-nav .nav-item .dropdown-menu {
+  background: #181619 !important;
+  border: none;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+@media (max-width: 991px) {
+  header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    text-align: center;
+  }
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item.active {
+  color: #C9AB81;
+  background: none;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background: transparent;
+  color: #C9AB81;
+}
+
+/* FOOTER */
+footer {
+  background: #121212;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+footer .footer-title {
+  color: #C9AB81;
+  font-family: "Caviar Dreams Bold", sans-serif;
+  font-size: 20px;
+}
+footer hr {
+  background: #C9AB81;
+  width: 5%;
+  margin: 20px auto;
+}
+footer .footer-schedules {
+  font-size: 14px;
+}
+footer .footer-schedules .highlight {
+  color: #C9AB81;
+}
+footer .footer-socialmedia .btn {
+  border-bottom: 1px solid #C9AB81;
+  color: #fff;
+  border-radius: 0;
+  width: 120px;
+}
+footer .footer-designed-by {
+  font-size: 12px;
+  padding: 10px;
+}
+footer .footer-designed-by a {
+  color: #C9AB81;
+}
+
+.modal-body {
+  background: #181619;
+}
+
+.products-container {
+  background: #0F1D22;
+}
+.products-container .products-style-selector button {
+  height: 40px;
+  min-width: 40px;
+  border-radius: 3px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  font-weight: 800;
+  color: #fff;
+  margin: 5px;
+}
+.products-container .products-style-selector button svg {
+  fill: #fff;
+}
+.products-container .products-style-selector button.active {
+  background: #C9AB81;
+  color: #121212;
+}
+.products-container .products-style-selector button.active svg {
+  fill: #121212;
+}
+.products-container .grid .product-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #121212;
+  transition: all 0.2s ease;
+}
+.products-container .grid .product-item .product-image img {
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+.products-container .grid .product-item .product-info .product-name {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.products-container .grid .product-item .product-info .product-price {
+  color: #C9AB81;
+  font-size: 20px;
+  font-weight: 700;
+}
+.products-container .grid .product-item:hover {
+  transform: scale(1.02);
+}
+.products-container .list .product-item {
+  text-transform: uppercase;
+  padding: 0px 10px;
+}
+.products-container .list .product-item .product-title {
+  border-bottom: 1px dashed #fff;
+}
+.products-container .list .product-item .product-title .product-name {
+  color: #fff;
+  font-size: 16px;
+}
+.products-container .list .product-item .product-title .product-price {
+  color: #C9AB81;
+  font-weight: 800;
+  font-size: 20px;
+}
+.products-container .list .product-item .product-description {
+  color: #cccccc;
+  font-family: "Open Sans Condensed", sans-serif !important;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=products.css.map */
